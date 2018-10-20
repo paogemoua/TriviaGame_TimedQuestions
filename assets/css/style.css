@@ -1,14 +1,22 @@
 body{
-	background-image: url();
+    background-image: url(https://vignette.wikia.nocookie.net/garo/images/5/5f/GARO_13-%28003267%2917-56-06-.jpg/revision/latest?cb=20120425012205);
     text-align: center;
+    font-family: 'Noto Serif JP', 'sans-serif';
 }
 
-.text-muted{
-	color: white;
+h1{
+    font-family: 'UnifrakturCook', 'cursive';
 }
+
+.text-dark{
+    background-color: white;
+    color: white;
+}
+
 .last-seconds{
   color: red;
 }
+
 .option{
   margin: 15px;
 }

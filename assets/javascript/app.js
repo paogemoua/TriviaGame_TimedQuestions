@@ -47,9 +47,9 @@ answers: {
     q3: 'Ray Fujita',
     q4: 'Ryuga Dogai',
     q5: 'Tsubasa',
-    q6: 'She is the progenitor of all Horrors in both the Original Series and Ryuga-verse.',
+    q6: 'Progenitor of all Horrors in both the Original Series and Ryuga-verse.',
     q7: '3',
-    q8: 'They are regular Horrors that are able to possess humans and take control of them.',
+    q8: 'They are personal foot solders and "family" of the legendary Horror Legules.',
     q9: 'the Medevial age',
     q10: 'Bar Chess'
 },
@@ -103,7 +103,7 @@ nextQuestion : function(){
     
     // creates all the trivia guess options in the html
     $.each(questionOptions, function(index, key){
-    $('#options').append($('<button class="option btn btn-info btn-lg">'+key+'</button>'));
+    $('#options').append($('<button class="option btn btn-warning btn-lg">'+key+'</button>'));
     })
     
 },
@@ -156,7 +156,7 @@ guessChecker : function() {
     // if the text of the option picked matches the answer of the current question, increment correct
     if($(this).text() === currentAnswer){
     // turn button green for correct
-    $(this).addClass('btn-success').removeClass('btn-info');
+    $(this).addClass('btn-success').removeClass('btn-warning');
     
     trivia.correct++;
     clearInterval(trivia.timerId);
@@ -166,7 +166,7 @@ guessChecker : function() {
     // else the user picked the wrong option, increment incorrect
     else{
     // turn button clicked red for incorrect
-    $(this).addClass('btn-danger').removeClass('btn-info');
+    $(this).addClass('btn-danger').removeClass('btn-warning');
     
     trivia.incorrect++;
     clearInterval(trivia.timerId);
