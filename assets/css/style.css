@@ -1,0 +1,18 @@
+body{
+	background-image: url();
+    text-align: center;
+}
+
+.text-muted{
+	color: white;
+}
+.last-seconds{
+  color: red;
+}
+.option{
+  margin: 15px;
+}
+
+#choicesbox {
+    justify-content: center;
+}
